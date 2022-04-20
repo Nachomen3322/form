@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+    <header><h1>PESO IDEAL🏋️‍♂️</h1></header>
+
+    <form>
+        
+        <div class="container">  
+            <div class="row">
+                <div class="col-25">
+                    <label>Altura (centímetros)</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" step="any" min="50" max="250" maxlength="20" size="20"  required placeholder="Altura" >
+                </div>
+            </div>
+            
+
+            <label>Edad</label>
+            <select>
+                <option value="cb">15-18años</option>
+                <option value="lp">19-25años</option>
+                <option value="sc">26-35años</option>
+                <option value="bn">36 años para arriba</option>
+            </select>
+            
+            <br><br>
+
+            <label>Sexo</label>
+            <select>
+                <option value="cb">Masculino</option>
+                <option value="bn">Femenino</option>
+                <option value="bn">Otro</option>
+            </select>
+            
+    
+            <div class="row">
+                <div class="col-25">
+                    <label>Radio de su muñeca</label>
+                </div>
+                <div class="col-75">
+                    <input type="number"  step="any" maxlength="20" size="20" name="rad" required placeholder="radio" min="1" max="30">
+                </div>
+            </div>
+
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+
+</body>
+</html>

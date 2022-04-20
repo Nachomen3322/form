@@ -1,0 +1,81 @@
+input[type="text"], input[type="number"],
+select
+{
+    width: 20%;
+    padding: 12px;
+    border: 2px solid rgb(19, 10, 10);
+    border-radius: 4px;
+    resize: vertical;
+    background-color: rgb(255, 217, 127);
+    margin: 25px;
+}
+body{
+    background-color: #8a693e;
+}
+header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+font-family: "Indie Flower", cursive;
+}
+
+input[type="submit"],
+input[type="reset"] {
+background-color: #67250a;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+margin: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #a11a1a;
+
+}
+input[type="reset"]:hover {
+background-color: #a11a1a;
+}
+
+
+.container {
+    border-radius: 50px;
+    background-color: #ffffff1d;
+    padding: 50px;
+}
+
+.col-25 {
+    float: left;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"],
+    input[type="reset"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
